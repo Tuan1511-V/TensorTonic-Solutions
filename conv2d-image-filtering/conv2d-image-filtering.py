@@ -18,8 +18,6 @@ def conv2d(image, kernel, stride=1, padding=0):
             new_j = j + padding
             new_i = i + padding
             pad_img[new_j][new_i] = image[j][i]
-    # pad_img = np.array(pad_img)
-    # kernel = np.array(kernel)
     output = [[0 for _ in range(W_out)] for _ in range(H_out)]
 
     for j in range(H_out):
